@@ -21,7 +21,9 @@
   "homepage": "https://github.com/BoboTheAvatar/SendIT#readme",
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
+    "chai": "^4.2.0",
     "express": "^4.16.4",
+    "mocha": "^5.2.0",
     "request": "^2.88.0"
   },
   "devDependencies": {
