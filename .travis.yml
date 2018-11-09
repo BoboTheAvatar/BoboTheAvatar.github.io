@@ -8,6 +8,8 @@ node_js:
 
 install:
   - npm install
+  - npm install -g nodemon
+  - npm install -g @babel/core @babel/node
   
 script:
   - npm start
