@@ -23,6 +23,9 @@ const deliveredidparcelsApi={
             const id = request.params.Id;
             console.log(id);
 
+            let x="";
+            let y="";
+
             for(x in jsondata.users){
                 for(y in jsondata.users[x].Orders){
                    console.log(jsondata.users[x].Orders[y]);
@@ -44,4 +47,9 @@ const deliveredidparcelsApi={
 
 };
 
-module.exports= deliveredidparcelsApi;
+//module.exports= deliveredidparcelsApi;
+
+export function deliveredidparcelsApifunction(request,response){
+  return deliveredidparcelsApi.deliveredidparcels(request,response);
+
+}

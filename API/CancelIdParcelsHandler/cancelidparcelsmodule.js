@@ -9,7 +9,7 @@ const cancelidparcelsApi={
 
               let filedata={};
 
-              filedata=fs.readFileSync("./API/test.json", (err, data) => {
+              filedata=fs.readFileSync("./API/jsonfile.json", (err, data) => {
               if (err) {
                   return err;
               }else{
@@ -24,6 +24,9 @@ const cancelidparcelsApi={
             const id = request.params.Id;
             console.log(id);
 
+            let x="";
+            let y="";
+
             for(x in jsondata.users){
                 for(y in jsondata.users[x].Orders){
                    console.log(jsondata.users[x].Orders[y]);
@@ -33,7 +36,7 @@ const cancelidparcelsApi={
                 }
              }
 
-             fs.writeFile('./API/test.json', JSON.stringify(jsondata), (err) => {
+             fs.writeFile('./API/jsonfile.json', JSON.stringify(jsondata), (err) => {
                            if (err) throw err;
                               console.log('The file has been saved!');
                       });
@@ -45,4 +48,9 @@ const cancelidparcelsApi={
 
 };
 
-module.exports= cancelidparcelsApi;
+//module.exports= cancelidparcelsApi;
+
+export function cancelidparcelsApifunction(request,response){
+  return cancelidparcelsApi.cancelidparcels(request,response);
+
+}

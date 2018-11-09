@@ -24,6 +24,8 @@ const getallidparcelsApi={
             const id = request.params.Id;
             console.log(id);
 
+            let x="";
+
             
               for(x in jsondata.users){
                     if(jsondata.users[x].Username===id){
@@ -40,4 +42,9 @@ const getallidparcelsApi={
 
 };
 
-module.exports= getallidparcelsApi;
+//module.exports= getallidparcelsApi;
+
+export function getallidparcelsApifunction(request,response){
+  return getallidparcelsApi.getallidparcels(request,response);
+
+}

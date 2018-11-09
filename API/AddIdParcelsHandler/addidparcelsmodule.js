@@ -61,4 +61,9 @@ const addidparcelsApi={
 
 };
 
-module.exports= addidparcelsApi;
+//module.exports= addidparcelsApi;
+
+export function addidparcelsApifunction(request,response){
+  return addidparcelsApi.addidparcels(request,response);
+
+}

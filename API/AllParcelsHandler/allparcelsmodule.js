@@ -21,6 +21,7 @@ const getallparcelsApi={
             const jsondata=JSON.parse(filedata);
             console.log(jsondata);
 
+            let x="";
             
               for(x in jsondata.users){
                       jsontosend[x]=jsondata.users[x].Orders;
@@ -35,5 +36,10 @@ const getallparcelsApi={
 
 };
 
-module.exports= getallparcelsApi;
+//module.exports= getallparcelsApi;
 //export { getallparcels };
+
+export function getallparcelsApifunction(request,response){
+  return getallparcelsApi.getallparcels(request,response);
+
+}

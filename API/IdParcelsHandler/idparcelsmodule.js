@@ -24,7 +24,9 @@ const getidparcelsApi={
             const id = request.params.parcelId;
             console.log(id);
 
-            
+            let x="";
+            let y="";
+
               for(x in jsondata.users){
                 for(y in jsondata.users[x].Orders){
                    console.log(jsondata.users[x].Orders[y]);
@@ -43,4 +45,8 @@ const getidparcelsApi={
 
 };
 
-module.exports= getidparcelsApi;
+//module.exports= getidparcelsApi;
+
+export function getidparcelsApifunction(request,response){
+  return getidparcelsApi.getidparcels(request,response);
+}
