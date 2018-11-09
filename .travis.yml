@@ -1,7 +1,9 @@
 language: node_js
 
 node_js: 
+  - Stable
   - 9
+  - 8
   - node
 
 
