@@ -5,3 +5,10 @@ node_js:
   - 9
   - 8
   - node
+
+install:
+  - npm install
+  
+script:
+  - npm start
+  - npm test
