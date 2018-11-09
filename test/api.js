@@ -173,7 +173,7 @@ describe("API End-point Testing", function() {
 
   // Testing no 4
 
- describe("Put: Cancel 1 parcel of 1 user", function() {
+ /*describe("Put: Cancel 1 parcel of 1 user", function() {
 
     var url = "http://localhost:8080/API/parcels/id121/cancel";
 
@@ -193,6 +193,6 @@ describe("API End-point Testing", function() {
       });
     });
 
-  });
+  });*/
 
 });
