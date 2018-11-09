@@ -1,16 +1,18 @@
 language: node_js
 
 node_js: 
-  - 10
   - 9
-  - 8
   - node
 
 install:
   - npm install
-  - npm install -g nodemon
-  - npm install -g @babel/core @babel/node
+
+cache:
+  directories:
+    - node_modules
   
 script:
   - npm start
   - npm test
+
+
