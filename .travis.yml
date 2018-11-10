@@ -1,5 +1,11 @@
 language: node_js
 
+env:
+  global:
+    - URL=http://localhost:3000
+    - PORT=3000
+    - NODE_ENV=development
+
 node_js: 
   - 9
   - 8
