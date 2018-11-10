@@ -1,9 +1,9 @@
 language: node_js
 
 node_js: 
-  - "stable"
   - 9
   - 8
   - node
 
-
+before_script: 
+  - chmod 0777 ./node_modules/.bin/mocha
