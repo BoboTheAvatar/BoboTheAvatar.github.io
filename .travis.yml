@@ -5,6 +5,17 @@ node_js:
   - node
 
 install:
+  - npm install
+  - npm install -g express
+  - npm install -g request
+  - npm install -g @babel/core @babel/cli @babel/node
+  - npm install -g babel-register
+  - npm install --g mocha
+  - npm install -g jasmine
+  - npm install -g jasmine-node
+  - npm install -g jasmine-console-reporter
+  - npm install -g superset
+  - npm install -g istanbul
   - npm install -g codecov
 
 before_script: 
