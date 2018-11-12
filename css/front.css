@@ -36,22 +36,11 @@
     float: right;
 }
 
-.invalidmessage{
-    color:#ffff00;
-    font-weight: bold;
-}
-
 .imagewrapper{
     background-image: url("../Images/world1.png");
 	background-color: #19547b;
 	opacity: 1;
 	height:500px;
-}
-.imagewrapperback{
-    background-image: url("../Images/world1.png");
-	background-color: #19547b;
-	opacity: 1;
-	height:600px;
 }
 
 .smallscreenintro{

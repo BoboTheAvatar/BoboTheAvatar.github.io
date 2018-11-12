@@ -1,6 +1,10 @@
-# SendIT
-SendIT is a courier service that helps users deliver parcels to different destinations. SendIT provides courier quotes based on weight categories.
+# SendIT + API 
 
+API designed to interact with the SendIT web application.
+API integrating the SendIT System Product.
+
+# SendIT Product Description:
+SendIT is a courier service that helps users deliver parcels to different destinations. SendIT provides courier quotes based on weight categories.
 Required Features:
 1. Users can create an account and log in.
 2. Users can create a parcel delivery order.
@@ -17,3 +21,5 @@ the pickup location and the destination. Leverage Google Maps Distance Matrix Se
 3. The user gets real-time email notification when Admin changes the status of their parcel.
 4. The user gets real-time email notification when Admin changes the present location of
 their parcel.
+
+# Andela Kigali Project November 2018

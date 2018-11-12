@@ -5,8 +5,8 @@
 		
 		var result="<br><table class=\"resulttable\">"
 		
-		    for(x in userjason0.cyborg.Orders[b]){
-			    result=result+"<tr><td>"+x+"</td><td>"+userjason0.cyborg.Orders[b][x]+"</td></tr>";
+		    for(x in userjason.username.Orders[b]){
+			    result=result+"<tr><td>"+x+"</td><td>"+userjason.username.Orders[b][x]+"</td></tr>";
 			}
 		
 		result=result+"</table>"
@@ -19,8 +19,8 @@
 		
 		var result="<br><table class=\"resulttable\">"
 		
-		    for(x in userjason0.cyborg.Orders[b]){
-			    result=result+"<tr><td>"+x+"</td><td>"+userjason0.cyborg.Orders[b][x]+"</td></tr>";
+		    for(x in userjason.username.Orders[b]){
+			    result=result+"<tr><td>"+x+"</td><td>"+userjason.username.Orders[b][x]+"</td></tr>";
 			}
 		
 		result=result+"</table><br>"+
@@ -42,13 +42,13 @@
 		var result=
 		"<center><div class=\"col-10\">"+
 		"<form class=\"leftcentclass\">"+
-		"<span>Parcel Description</span><br><textarea placeholder=\"\" class=\"inputform1\">"+userjason0.cyborg.Orders[a]["Info"]+"</textarea><br>"+
-		"<span>Parcel Weight</span><br><input type=\"number\" placeholder=\""+userjason0.cyborg.Orders[a]["Weight"]+"\" class=\"inputform1\"/><br>"+
-		"<span>Receiver Name</span><br><input type=\"text\" placeholder=\""+userjason0.cyborg.Orders[a]["Receiver"]+"\"class=\"inputform1\"/><br>"+
-		"<span>Receiver Number</span><br><input type=\"text\" placeholder=\""+userjason0.cyborg.Orders[a]["Phone"]+"\" class=\"inputform1\"/><br>"+
-		"<span>Departure</span><br><input type=\"text\" placeholder=\""+userjason0.cyborg.Orders[a]["Departure"]+"\" class=\"inputform1\"/><br>"+
-        "<span>Destination</span><br><input type=\"text\" placeholder=\""+userjason0.cyborg.Orders[a]["Destination"]+"\" class=\"inputform1\"/><br>"+
-        "<span>Location</span><br><input type=\"text\" placeholder=\""+userjason0.cyborg.Orders[a]["Location"]+"\" class=\"inputform1\"/><br>"+		
+		"<span>Parcel Description</span><br><textarea placeholder=\"\" class=\"inputform1\">"+userjason.username.Orders[a]["Info"]+"</textarea><br>"+
+		"<span>Parcel Weight</span><br><input type=\"number\" placeholder=\""+userjason.username.Orders[a]["Weight"]+"\" class=\"inputform1\"/><br>"+
+		"<span>Receiver Name</span><br><input type=\"text\" placeholder=\""+userjason.username.Orders[a]["Receiver"]+"\"class=\"inputform1\"/><br>"+
+		"<span>Receiver Number</span><br><input type=\"text\" placeholder=\""+userjason.username.Orders[a]["Phone"]+"\" class=\"inputform1\"/><br>"+
+		"<span>Departure</span><br><input type=\"text\" placeholder=\""+userjason.username.Orders[a]["Departure"]+"\" class=\"inputform1\"/><br>"+
+        "<span>Destination</span><br><input type=\"text\" placeholder=\""+userjason.username.Orders[a]["Destination"]+"\" class=\"inputform1\"/><br>"+
+        "<span>Location</span><br><input type=\"text\" placeholder=\""+userjason.username.Orders[a]["Location"]+"\" class=\"inputform1\"/><br>"+		
 		"<br>"+
 		"<div id=\"map\"></div>"+
 		"<Span> Details on pricing</span><br><br>"+
