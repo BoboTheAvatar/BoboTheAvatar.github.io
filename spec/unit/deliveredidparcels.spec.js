@@ -1,4 +1,4 @@
-//var allidparcels = require('../../API/AllIdParcelsHandler/allidparcelsmodule');
+
 const request=require('request');
 
 
