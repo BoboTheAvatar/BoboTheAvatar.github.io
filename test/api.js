@@ -1,7 +1,7 @@
 const express= require('express');
-var expect  = require("chai").expect;
+const expect  = require("chai").expect;
 //import { expect } from 'chai';
-var request = require("request");
+const request = require("request");
 
 
 describe("API End-point Testing", function() {
@@ -10,11 +10,11 @@ describe("API End-point Testing", function() {
 
   describe("Get all parcels of 1 user", function() {
     
-    var url = "http://localhost:8080/API/v1/users/bobobuya/parcels";
+    let url = "http://localhost:8080/API/v1/users/bobobuya/parcels";
 
-    //console.log(url);
+    //console.log(url);;
 
-    var result={ 
+    let result={ 
         "bobobuya":{
            "order1":{
                "Id":"id111",
@@ -64,9 +64,9 @@ describe("API End-point Testing", function() {
   // Testing No 2
   describe("Get all parcels of All users", function() {
 
-    var url = "http://localhost:8080/API/v1/parcels";
+    let url = "http://localhost:8080/API/v1/parcels";
 
-    var result={
+    let result={
       "bobobuya":{
              "order1":{
                "Id":"id111",
@@ -145,9 +145,9 @@ describe("API End-point Testing", function() {
 
   describe("Get 1 parcels of 1 user", function() {
 
-    var url = "http://localhost:8080/API/v1/parcels/id111";
+    let url = "http://localhost:8080/API/v1/parcels/id111";
 
-    var result={ 
+    let result={ 
            "order1":{
                "Id":"id111",
                "Info":"Laptop1",
