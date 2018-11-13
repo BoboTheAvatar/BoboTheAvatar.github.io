@@ -15,7 +15,7 @@ const getallidparcelsApi={
 
               let filedata={};
 
-              filedata=fs.readFileSync("./API/jsonfile.json", (err, data) => {
+              filedata=fs.readFileSync("./api/jsonfile.json", (err, data) => {
               if (err) {
                   return err;
               }else{
