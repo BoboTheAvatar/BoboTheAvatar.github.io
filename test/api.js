@@ -10,7 +10,7 @@ describe("API End-point Testing", function() {
 
   describe("Get all parcels of 1 user", function() {
     
-    let url = "http://localhost:8080/API/v1/users/bobobuya/parcels";
+    let url = "http://localhost:8080/api/v1/users/bobobuya/parcels";
 
     //console.log(url);;
 
