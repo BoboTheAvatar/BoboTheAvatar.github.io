@@ -17,7 +17,7 @@ const locationidparcelsApi={
 
               let filedata={};
 
-              filedata=fs.readFileSync("./API/test.json", (err, data) => {
+              filedata=fs.readFileSync("./api/test.json", (err, data) => {
               if (err) {
                   return err;
               }else{
@@ -45,7 +45,7 @@ const locationidparcelsApi={
                 }
              }
 
-             fs.writeFile('./API/test.json', JSON.stringify(jsondata), (err) => {
+             fs.writeFile('./api/test.json', JSON.stringify(jsondata), (err) => {
                            if (err) throw err;
                               console.log('The file has been saved!');
                       });
