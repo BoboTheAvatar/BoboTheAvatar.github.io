@@ -41,7 +41,7 @@ const addidparcelsApi={
             const id1 =newdata.Sender;
             const t=newdata.Id;
 
-            console.log(id1+" >> "+t);
+            //console.log(id1+" >> "+t);
 
             //console.log(jsondata.users[id1].Orders);
 
@@ -52,7 +52,7 @@ const addidparcelsApi={
 
 
             //console.log(jsondata.users[id1].Orders[t]);
-            console.log(jsondata.users[id1]);
+            //console.log(jsondata.users[id1]);
 
             fs.writeFile('./api/test.json', JSON.stringify(jsondata), (err) => {
                            if (err) throw err;

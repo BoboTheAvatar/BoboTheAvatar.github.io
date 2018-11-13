@@ -26,10 +26,10 @@ const getallidparcelsApi={
 
 
             const jsondata=JSON.parse(filedata);
-            console.log(jsondata);
+            //console.log(jsondata);
 
             const id = request.params.Id;
-            console.log(id);
+            //console.log(id);
 
             let x="";
 
@@ -40,7 +40,7 @@ const getallidparcelsApi={
                     }
              }
 
-             console.log(jsontosend);
+             //console.log(jsontosend);
 
 
             response.setHeader('Content-Type','application/json');

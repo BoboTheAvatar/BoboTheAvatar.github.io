@@ -28,7 +28,7 @@ const getallparcelsApi={
 
 
             const jsondata=JSON.parse(filedata);
-            console.log(jsondata);
+            //console.log(jsondata);
 
             let x="";
             
@@ -36,7 +36,7 @@ const getallparcelsApi={
                       jsontosend[x]=jsondata.users[x].Orders;
              }
 
-             console.log(jsontosend);
+             //console.log(jsontosend);
 
 
             response.setHeader('Content-Type','application/json');
