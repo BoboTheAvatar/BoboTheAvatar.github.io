@@ -4,7 +4,7 @@ const request=require('request');
 
 describe("Change status of a ID parcel Test ", () => {
     
-    let url = "http://localhost:8080/API/v1/parcels/id111/delivered", result="Done!";
+    let url = "http://localhost:8080/api/v1/parcels/id111/delivered", result="Done!";
     
     
 

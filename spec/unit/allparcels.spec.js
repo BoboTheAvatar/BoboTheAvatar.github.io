@@ -4,7 +4,7 @@ const request=require('request');
 
 describe("Select All Parcels Test ", () => {
     
-    let url = "http://localhost:8080/API/v1/parcels";
+    let url = "http://localhost:8080/api/v1/parcels";
 
     var result={
       "bobobuya":{

@@ -4,7 +4,7 @@ const request=require('request');
 
 describe("Select One ID parcels Test ", () => {
 
-    let url = "http://localhost:8080/API/v1/parcels/id111";
+    let url = "http://localhost:8080/api/v1/parcels/id111";
 
     let result={ 
            "order1":{

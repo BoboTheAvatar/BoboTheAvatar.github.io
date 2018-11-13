@@ -4,7 +4,7 @@ const request=require('request');
 
 describe("Select All ID Parcels Test ", () => {
     
-    let url = "http://localhost:8080/API/v1/users/bobobuya/parcels";
+    let url = "http://localhost:8080/api/v1/users/bobobuya/parcels";
     
     let result={ 
         "bobobuya":{
@@ -37,7 +37,7 @@ describe("Select All ID Parcels Test ", () => {
 
     it("returns status 200", (done)=> {
       request(url, (error, response, body) =>{
-      	console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"+response.statusCode);
+      	//console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"+response.statusCode);
         expect(response.statusCode).toEqual(200);
         done();
       });

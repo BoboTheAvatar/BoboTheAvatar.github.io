@@ -4,7 +4,7 @@ const request=require('request');
 
 describe("Cancel ID parcel Test ", () => {
     
-    let url = "http://localhost:8080/API/v1/parcels/id121/cancel", result="Done!";
+    let url = "http://localhost:8080/api/v1/parcels/id121/cancel", result="Done!";
     
     
 
