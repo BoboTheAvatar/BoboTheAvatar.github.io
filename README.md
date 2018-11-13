@@ -23,9 +23,9 @@ the pickup location and the destination. Leverage Google Maps Distance Matrix Se
 their parcel.
 
 # APPLICATION DEVELOPMENT TOOLS:
--Front-End: HTML, CSS, Javascript
--Back-End: NodeJS/ExpressJS (ES6)
--Storage : Json File.
+- Front-End: HTML, CSS, Javascript
+- Back-End: NodeJS/ExpressJS (ES6)
+- Storage : Json File.
 
 # PATH USED TO ACCESS RESOURCES
 Here are the path:
