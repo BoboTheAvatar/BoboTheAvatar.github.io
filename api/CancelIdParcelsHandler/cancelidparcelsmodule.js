@@ -15,7 +15,7 @@ const cancelidparcelsApi={
 
               let filedata={};
 
-              filedata=fs.readFileSync("./API/jsonfile.json", (err, data) => {
+              filedata=fs.readFileSync("./api/jsonfile.json", (err, data) => {
               if (err) {
                   return err;
               }else{
@@ -42,7 +42,7 @@ const cancelidparcelsApi={
                 }
              }
 
-             fs.writeFile('./API/jsonfile.json', JSON.stringify(jsondata), (err) => {
+             fs.writeFile('./api/jsonfile.json', JSON.stringify(jsondata), (err) => {
                            if (err) throw err;
                               console.log('The file has been saved!');
                       });
