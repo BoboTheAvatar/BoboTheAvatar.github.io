@@ -39,7 +39,7 @@ const deliveredidparcelsApi={
                 }
              }
 
-             fs.writeFile('./API/test.json', JSON.stringify(jsondata), (err) => {
+             fs.writeFile('./api/test.json', JSON.stringify(jsondata), (err) => {
                            if (err) throw err;
                               console.log('The file has been saved!');
                       });
