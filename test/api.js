@@ -64,7 +64,7 @@ describe("API End-point Testing", function() {
   // Testing No 2
   describe("Get all parcels of All users", function() {
 
-    let url = "http://localhost:8080/API/v1/parcels";
+    let url = "http://localhost:8080/api/v1/parcels";
 
     let result={
       "bobobuya":{
@@ -145,7 +145,7 @@ describe("API End-point Testing", function() {
 
   describe("Get 1 parcels of 1 user", function() {
 
-    let url = "http://localhost:8080/API/v1/parcels/id111";
+    let url = "http://localhost:8080/api/v1/parcels/id111";
 
     let result={ 
            "order1":{
