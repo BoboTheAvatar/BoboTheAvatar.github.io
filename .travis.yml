@@ -8,6 +8,9 @@ install:
   - npm install
   - npm install -g codecov
 
+instrumentation:
+    root: src
+
 before_script: 
   - chmod 0777 ./node_modules/.bin/istanbul
   - chmod 0777 ./node_modules/.bin/babel-node
