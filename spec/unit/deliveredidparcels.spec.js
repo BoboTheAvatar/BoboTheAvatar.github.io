@@ -2,7 +2,7 @@
 const request=require('request');
 
 
-describe("Cancel ID parcel Test ", () => {
+describe("Change status of a ID parcel Test ", () => {
     
     let url = "http://localhost:8080/API/v1/parcels/id111/delivered", result="Done!";
     
