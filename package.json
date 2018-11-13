@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js",
+	"delayer": "babel-node delayer.js",
     "test": "jasmine",
     "test1": "./node_modules/.bin/mocha",
-    "test-cover": "./node_modules/.bin/istanbul cover --include-all-sources spec/specs.js && istanbul check-coverage -- --require babel-register"
+    "test-cover": "./node_modules/.bin/istanbul cover --include-all-sources spec/specs.js && istanbul check-coverage -- --require babel-register",
+	"test-cover1": "./node_modules/.bin/istanbul cover --include-all-sources babel-node spec/specs.js -- --require babel-register"
   },
   "repository": {
     "type": "git",
