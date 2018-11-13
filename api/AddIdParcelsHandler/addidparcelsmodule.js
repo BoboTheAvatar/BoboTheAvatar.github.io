@@ -26,7 +26,7 @@ const addidparcelsApi={
 
               let filedata={};
 
-              filedata=fs.readFileSync("./API/test.json", (err, data) => {
+              filedata=fs.readFileSync("./api/test.json", (err, data) => {
               if (err) {
                   return err;
               }else{
