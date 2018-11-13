@@ -6,7 +6,16 @@ node_js:
 
 install:
   - npm install
+  - npm install -g express
+  - npm install -g @babel/core @babel/cli @babel/node
+  - npm install -g jasmine
+  - npm install -g jasmine-node
+  - npm install -g jasmine-console-reporter
+  - npm install -g jasmine-supertest
+  - npm install -g supertest
   - npm install -g codecov
+  - npm install -g babel-register
+  - npm install -g istanbul
 
 instrumentation:
     root: src
