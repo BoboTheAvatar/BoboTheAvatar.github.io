@@ -1,5 +1,7 @@
 # SendIT + API 
 
+[![Build Status](https://travis-ci.org/BoboTheAvatar/SendIT.svg?branch=API)](https://travis-ci.org/BoboTheAvatar/SendIT)
+
 API designed to interact with the SendIT web application.
 API integrating the SendIT System Product.
 
