@@ -21,7 +21,7 @@ const locationidparcelsApi={
 
             });
 
-            const jsondata=JSON.parse(filedata), id = request.params.Id, x="", y="";
+            let jsondata=JSON.parse(filedata), id = request.params.Id, x="", y="";
             //console.log(jsondata);
             //console.log(id);
 

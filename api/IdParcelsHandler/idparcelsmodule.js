@@ -21,7 +21,7 @@ const getidparcelsApi={
             });
 
 
-            const jsondata=JSON.parse(filedata), id = request.params.parcelId, x="", y="";
+            let jsondata=JSON.parse(filedata), id = request.params.parcelId, x="", y="";
 
               for(x in jsondata.users){
                 for(y in jsondata.users[x].Orders){

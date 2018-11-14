@@ -1,5 +1,5 @@
 import fs from 'fs';
-import  bodyParser from 'body-parser';
+//import  bodyParser from 'body-parser';
 
 export function getallidparcelsApifunction(request,response){
   return getallidparcelsApi.getallidparcels(request,response);
@@ -14,16 +14,15 @@ const getallidparcelsApi={
             let jsontosend={};
 
             let filedata=fs.readFileSync("./api/jsonfile.json", (err, data) => {
-              if (err) {
-                  return err;
+              if (err) { 
+                return err;
               }else{
-                  return data;
+                return data;
               }
-
             });
 
 
-            const jsondata=JSON.parse(filedata), id = request.params.Id, x="";
+            let jsondata=JSON.parse(filedata), id = request.params.Id, x="";
 
             
               for(x in jsondata.users){

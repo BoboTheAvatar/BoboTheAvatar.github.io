@@ -19,7 +19,7 @@ const deliveredidparcelsApi={
 
             });
 
-            const jsondata=JSON.parse(filedata), id = request.params.Id, w="", y="";
+            let jsondata=JSON.parse(filedata), id = request.params.Id, w="", y="";
 
             for(w in jsondata.users){
                 for(y in jsondata.users[w].Orders){

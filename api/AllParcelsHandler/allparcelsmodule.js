@@ -25,7 +25,7 @@ const getallparcelsApi={
             });
 
 
-            const jsondata=JSON.parse(filedata), x="";
+            let jsondata=JSON.parse(filedata), x="";
             
               for(x in jsondata.users){
                       jsontosend[x]=jsondata.users[x].Orders;

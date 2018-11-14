@@ -1,5 +1,5 @@
 import fs from 'fs';
-import bodyParser from 'body-parser';
+//import bodyParser from 'body-parser';
 
 export function addidparcelsApifunction(request,response){
   return addidparcelsApi.addidparcels(request,response);
@@ -25,16 +25,11 @@ const addidparcelsApi={
                             };
 
             let filedata=fs.readFileSync("./api/test.json", (err, data) => {
-              if (err) {
-                  return err;
-              }else{
-                  return data;
-              }
-
+              if (err) { return err;}
+              else{return data;}
             });
 
-            const jsondata=JSON.parse(filedata), id1 =newdata.Sender;
-            const t=newdata.Id;
+            let jsondata=JSON.parse(filedata), id1 =newdata.Sender, t=newdata.Id;
 
             //console.log(id1+" >> "+t);
 
@@ -51,7 +46,7 @@ const addidparcelsApi={
 
             fs.writeFile('./api/test.json', JSON.stringify(jsondata), (err) => {
                            if (err) throw err;
-                              console.log('The file has been saved!');
+                              //console.log('The file has been saved!');
                       });
 
 
