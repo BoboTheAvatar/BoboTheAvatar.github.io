@@ -39,8 +39,9 @@ const deliveredidparcelsApi={
                 }
              }
 
-             fs.writeFile('./api/test.json', JSON.stringify(jsondata), (err) => {
-                           if (err) throw err;
+             fs.writeFile('./api/test.json', JSON.stringify(jsondata), (error) => {
+                           //console.log('One record has been updated as Delivered!');
+                           if (error) throw error;
                               console.log('One record has been updated as Delivered!');
                       });
 
