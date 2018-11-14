@@ -15,9 +15,7 @@ const getallparcelsApi={
               
               let jsontosend={};
 
-              let filedata={};
-
-              filedata=fs.readFileSync("./api/jsonfile.json", (err, data) => {
+            let filedata=fs.readFileSync("./api/jsonfile.json", (err, data) => {
               if (err) {
                   return err;
               }else{
@@ -27,10 +25,7 @@ const getallparcelsApi={
             });
 
 
-            const jsondata=JSON.parse(filedata);
-            //console.log(jsondata);
-
-            let x="";
+            const jsondata=JSON.parse(filedata), x="";
             
               for(x in jsondata.users){
                       jsontosend[x]=jsondata.users[x].Orders;

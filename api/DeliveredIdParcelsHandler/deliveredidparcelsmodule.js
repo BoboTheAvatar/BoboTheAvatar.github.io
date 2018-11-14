@@ -10,9 +10,7 @@ const deliveredidparcelsApi={
 	deliveredidparcels : (request,response) => {
 
 
-              let filedata={};
-
-              filedata=fs.readFileSync("./api/test.json", (err, data) => {
+            let filedata=fs.readFileSync("./api/test.json", (err, data) => {
               if (err) {
                   return err;
               }else{
@@ -21,14 +19,7 @@ const deliveredidparcelsApi={
 
             });
 
-            const jsondata=JSON.parse(filedata);
-            //console.log(jsondata);
-
-            const id = request.params.Id;
-            //console.log(id);
-
-            let w="";
-            let y="";
+            const jsondata=JSON.parse(filedata), id = request.params.Id, w="", y="";
 
             for(w in jsondata.users){
                 for(y in jsondata.users[w].Orders){

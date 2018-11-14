@@ -8,14 +8,9 @@ export function locationidparcelsApifunction(request,response){
 const locationidparcelsApi={
 	
 	locationidparcels : (request,response) => {
-
-		         let jsontostore={};
               
               //Entered new location and price
-              const enteredprice=126;
-              const enteredlocation="KL 123"
-
-              let filedata={};
+              const enteredprice=126, enteredlocation="KL 123", filedata={};
 
               filedata=fs.readFileSync("./api/test.json", (err, data) => {
               if (err) {
@@ -26,14 +21,10 @@ const locationidparcelsApi={
 
             });
 
-            const jsondata=JSON.parse(filedata);
+            const jsondata=JSON.parse(filedata), id = request.params.Id, x="", y="";
             //console.log(jsondata);
-
-            const id = request.params.Id;
             //console.log(id);
 
-            let x="";
-            let y="";
 
             for(x in jsondata.users){
                 for(y in jsondata.users[x].Orders){
@@ -45,9 +36,9 @@ const locationidparcelsApi={
                 }
              }
 
-             fs.writeFile('./api/test.json', JSON.stringify(jsondata), (erronous) => {
-                           if (erronous) throw erronous;
-                              console.log('The file has been saved!');
+             fs.writeFile('./api/test.json', JSON.stringify(jsondata), (err) => {
+                           if (err) throw err;
+                              //console.log('The file has been saved!');
                       });
 
 

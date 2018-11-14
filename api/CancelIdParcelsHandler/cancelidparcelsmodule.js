@@ -10,12 +10,8 @@ const cancelidparcelsApi={
 	cancelidparcels : (request,response) => {
 
               
-              let jsontostore={};
 
-
-              let filedata={};
-
-              filedata=fs.readFileSync("./api/jsonfile.json", (err, data) => {
+            let filedata=fs.readFileSync("./api/jsonfile.json", (err, data) => {
               if (err) {
                   return err;
               }else{
@@ -24,18 +20,11 @@ const cancelidparcelsApi={
 
             });
 
-            const jsondata=JSON.parse(filedata);
-            //console.log(jsondata);
-
-            const id = request.params.Id;
-            //console.log(id);
-
-            let x="";
-            let z="";
+            const jsondata=JSON.parse(filedata), id = request.params.Id, x="", z="";
 
             for(x in jsondata.users){
                 for(z in jsondata.users[x].Orders){
-                   console.log(jsondata.users[x].Orders[y]);
+                   console.log(jsondata.users[x].Orders[z]);
                     if(jsondata.users[x].Orders[z].Id===id){
                       jsondata.users[x].Orders[z].Status="Cancelled";
                     }

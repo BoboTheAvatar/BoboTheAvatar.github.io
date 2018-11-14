@@ -22,11 +22,9 @@ const addidparcelsApi={
                                         "Location":"KL153",
                                         "Price": "1217",
                                         "Status":"In Progress"           
-                            }
+                            };
 
-              let filedata={};
-
-              filedata=fs.readFileSync("./api/test.json", (err, data) => {
+            let filedata=fs.readFileSync("./api/test.json", (err, data) => {
               if (err) {
                   return err;
               }else{
@@ -35,10 +33,7 @@ const addidparcelsApi={
 
             });
 
-            const jsondata=JSON.parse(filedata);
-            //console.log(jsondata);
-
-            const id1 =newdata.Sender;
+            const jsondata=JSON.parse(filedata), id1 =newdata.Sender;
             const t=newdata.Id;
 
             //console.log(id1+" >> "+t);

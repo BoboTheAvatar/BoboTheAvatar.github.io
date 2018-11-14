@@ -11,9 +11,7 @@ const getidparcelsApi={
               
               let jsontosend={};
 
-              let filedata={};
-
-              filedata=fs.readFileSync("./api/jsonfile.json", (err, data) => {
+            let filedata=fs.readFileSync("./api/jsonfile.json", (err, data) => {
               if (err) {
                   return err;
               }else{
@@ -23,14 +21,7 @@ const getidparcelsApi={
             });
 
 
-            const jsondata=JSON.parse(filedata);
-            //console.log(jsondata);
-
-            const id = request.params.parcelId;
-            //console.log(id);
-
-            let x="";
-            let y="";
+            const jsondata=JSON.parse(filedata), id = request.params.parcelId, x="", y="";
 
               for(x in jsondata.users){
                 for(y in jsondata.users[x].Orders){
