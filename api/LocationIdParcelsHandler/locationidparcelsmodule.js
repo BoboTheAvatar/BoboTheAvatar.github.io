@@ -45,8 +45,8 @@ const locationidparcelsApi={
                 }
              }
 
-             fs.writeFile('./api/test.json', JSON.stringify(jsondata), (err) => {
-                           if (err) throw err;
+             fs.writeFile('./api/test.json', JSON.stringify(jsondata), (erronous) => {
+                           if (erronous) throw erronous;
                               console.log('The file has been saved!');
                       });
 
