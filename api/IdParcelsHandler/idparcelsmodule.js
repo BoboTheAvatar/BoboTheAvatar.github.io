@@ -9,7 +9,7 @@ const getidparcelsApi={
 	
 	getidparcels : (request,response) => {
               
-              let jsontosend={};
+            let jsontosend={};
 
             let filedata=fs.readFileSync("./api/jsonfile.json", (err, data) => {
               if (err) {
