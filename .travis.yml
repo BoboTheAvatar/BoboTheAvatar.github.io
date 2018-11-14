@@ -32,4 +32,4 @@ script:
   
 after_success:
     - codecov
-    -"npm run coveralls"
+    -"npm run coverage"
