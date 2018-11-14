@@ -27,21 +27,21 @@ const deliveredidparcelsApi={
             const id = request.params.Id;
             //console.log(id);
 
-            let x="";
+            let w="";
             let y="";
 
-            for(x in jsondata.users){
-                for(y in jsondata.users[x].Orders){
+            for(w in jsondata.users){
+                for(y in jsondata.users[w].Orders){
                    //console.log(jsondata.users[x].Orders[y]);
-                    if(jsondata.users[x].Orders[y].Id===id){
-                      jsondata.users[x].Orders[y].Status="Delivered";
+                    if(jsondata.users[w].Orders[y].Id===id){
+                      jsondata.users[w].Orders[y].Status="Delivered";
                     }
                 }
              }
 
              fs.writeFile('./api/test.json', JSON.stringify(jsondata), (err) => {
                            if (err) throw err;
-                              console.log('The file has been saved!');
+                              console.log('One record has been updated as Delivered!');
                       });
 
 

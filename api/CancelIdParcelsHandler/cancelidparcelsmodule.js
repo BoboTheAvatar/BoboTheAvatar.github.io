@@ -31,20 +31,20 @@ const cancelidparcelsApi={
             //console.log(id);
 
             let x="";
-            let y="";
+            let z="";
 
             for(x in jsondata.users){
-                for(y in jsondata.users[x].Orders){
+                for(z in jsondata.users[x].Orders){
                    //console.log(jsondata.users[x].Orders[y]);
-                    if(jsondata.users[x].Orders[y].Id===id){
-                      jsondata.users[x].Orders[y].Status="Cancelled";
+                    if(jsondata.users[x].Orders[z].Id===id){
+                      jsondata.users[x].Orders[z].Status="Cancelled";
                     }
                 }
              }
 
              fs.writeFile('./api/jsonfile.json', JSON.stringify(jsondata), (err) => {
                            if (err) throw err;
-                              console.log('The file has been saved!');
+                              console.log('Order Cancelled!');
                       });
 
 
