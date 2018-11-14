@@ -1,8 +1,6 @@
 # SendIT + API 
 
-[![Build Status](https://travis-ci.org/BoboTheAvatar/SendIT.svg?branch=API)](https://travis-ci.org/BoboTheAvatar/SendIT)
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/dce0208b5ff0bbf0b8f4/maintainability)](https://codeclimate.com/github/BoboTheAvatar/SendIT/maintainability)
+[![Build Status](https://travis-ci.org/BoboTheAvatar/SendIT.svg?branch=API)](https://travis-ci.org/BoboTheAvatar/SendIT)  [![Maintainability](https://api.codeclimate.com/v1/badges/dce0208b5ff0bbf0b8f4/maintainability)](https://codeclimate.com/github/BoboTheAvatar/SendIT/maintainability)
 
 API designed to interact with the SendIT web application.
 API integrating the SendIT System Product.
