@@ -28,7 +28,7 @@ before_script:
 script:
   - "npm start &"
   - "npm run delayer"
-  - "npm run test"
+  - "npm run test-cover1"
   
 after_success:
     - codecov
