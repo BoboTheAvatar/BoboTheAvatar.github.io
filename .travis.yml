@@ -31,5 +31,5 @@ script:
   - "npm run test2"
   
 after_success:
-    - codecov
-    -"npm run coverage"
+  - codecov
+  - "npm run coverage"
