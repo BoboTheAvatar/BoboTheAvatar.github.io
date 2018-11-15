@@ -31,7 +31,20 @@ describe("Select All Parcels Test ", () => {
              "Location":"Kn14",
              "Price": "12",
              "Status":"Cancelled"
-           }
+           },
+           "id151":{
+            "Id":"id151",
+            "Info":"Headphone",
+            "Weight":"124",
+            "Sender":"bobobuya",
+            "Receiver":"Uwera",
+            "Phone":"3552574454",
+            "Departure":"Kg45",
+            "Destination":"KK333",
+            "Location":"KL153",
+            "Price":"1217",
+            "Status":"In Progress"
+          }
     },
 
     "hariyalibuya":{
@@ -45,7 +58,7 @@ describe("Select All Parcels Test ", () => {
              "Destination": "Kn013",
              "Location":"Kn014",
              "Price": "1293",
-             "Status":"Delivered"
+             "Status":"Cancelled"
            },
            "order4":{
                "Id":"id141",
