@@ -1,4 +1,4 @@
-
+require("@babel/preset-env");
 const request=require('request');
 
 
