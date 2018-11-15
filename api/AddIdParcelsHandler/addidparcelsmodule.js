@@ -24,7 +24,7 @@ const addidparcelsApi={
                                         "Status":"In Progress"           
                             };
 
-            let filedata=fs.readFileSync("./api/test.json", (err, data) => {
+            let filedata=fs.readFileSync("./api/jsonfile.json", (err, data) => {
               if (err) { return err;}
               else{return data;}
             });
@@ -44,7 +44,7 @@ const addidparcelsApi={
             //console.log(jsondata.users[id1].Orders[t]);
             //console.log(jsondata.users[id1]);
 
-            fs.writeFile('./api/test.json', JSON.stringify(jsondata), (err) => {
+            fs.writeFile('./api/jsonfile.json', JSON.stringify(jsondata), (err) => {
                            if (err) throw err;
                               //console.log('The file has been saved!');
                       });

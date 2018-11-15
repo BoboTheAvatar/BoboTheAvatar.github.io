@@ -10,7 +10,7 @@ const deliveredidparcelsApi={
 	deliveredidparcels : (request,response) => {
 
 
-            let filedata=fs.readFileSync("./api/test.json", (err, data) => {
+            let filedata=fs.readFileSync("./api/jsonfile.json", (err, data) => {
               if (err) {
                   return err;
               }else{
@@ -30,7 +30,7 @@ const deliveredidparcelsApi={
                 }
              }
 
-             fs.writeFile('./api/test.json', JSON.stringify(jsondata), (error) => {
+             fs.writeFile('./api/jsonfile.json', JSON.stringify(jsondata), (error) => {
                            //console.log('One record has been updated as Delivered!');
                            if (error) throw error;
                               console.log('One record has been updated as Delivered!');
