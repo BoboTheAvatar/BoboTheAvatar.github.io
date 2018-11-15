@@ -31,7 +31,7 @@ const cancelidparcelsApi={
                 }
              }
 
-             fs.writeFile('./api/jsonfile.json', JSON.stringify(jsondata), (err) => {
+             fs.writeFile('./api/jsonfile.json',jsondata, (err) => {
                            if (err) throw err;
                               console.log('Order Cancelled!');
                       });
