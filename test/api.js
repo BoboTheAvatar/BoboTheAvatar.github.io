@@ -42,7 +42,20 @@ describe("API End-point Testing", function() {
              "Location":"Kn14",
              "Price": "12",
              "Status":"Cancelled"
-           }
+           },
+           "id151":{
+            "Id":"id151",
+            "Info":"Headphone",
+            "Weight":"124",
+            "Sender":"bobobuya",
+            "Receiver":"Uwera",
+            "Phone":"3552574454",
+            "Departure":"Kg45",
+            "Destination":"KK333",
+            "Location":"KL153",
+            "Price":"1217",
+            "Status":"In Progress"
+          }
         }
     };
 
@@ -94,7 +107,20 @@ describe("API End-point Testing", function() {
              "Location":"Kn14",
              "Price": "12",
              "Status":"Cancelled"
-           }
+           },
+           "id151":{
+            "Id":"id151",
+            "Info":"Headphone",
+            "Weight":"124",
+            "Sender":"bobobuya",
+            "Receiver":"Uwera",
+            "Phone":"3552574454",
+            "Departure":"Kg45",
+            "Destination":"KK333",
+            "Location":"KL153",
+            "Price":"1217",
+            "Status":"In Progress"
+          }
     },
 
     "hariyalibuya":{
@@ -108,7 +134,7 @@ describe("API End-point Testing", function() {
              "Destination": "Kn013",
              "Location":"Kn014",
              "Price": "1293",
-             "Status":"Delivered"
+             "Status":"Cancelled"
            },
            "order4":{
                "Id":"id141",
