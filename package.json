@@ -7,7 +7,7 @@
     "start": "babel-node index.js",
     "delayer": "babel-node delayer.js",
     "test": "jasmine",
-    "test1": "./node_modules/.bin/mocha",
+    "test1": "nyc --reporter=html --reporter=text ./node_modules/.bin/mocha",
     "test2": "nyc --reporter=html --reporter=text jasmine",
 	"test4": "babel-node spec/specs",
     "test-cover": "./node_modules/.bin/istanbul cover --include-all-sources spec/specs.js && istanbul check-coverage -- --require babel-register",
