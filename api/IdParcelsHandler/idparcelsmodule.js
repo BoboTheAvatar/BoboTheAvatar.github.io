@@ -1,3 +1,4 @@
+//import Database from "../Database";
 import fs from 'fs';
 import  bodyParser from 'body-parser';
 
@@ -8,12 +9,13 @@ export function getidparcelsApifunction(request,response){
 const getidparcelsApi={
 	
 	getidparcels : (request,response) => {
-              
+             
+            
             let jsontosend={};
 
             let filedata=fs.readFileSync("./api/jsonfile.json", (err, data) => {
               if (err) {
-                  return err;
+                  return err
               }else{
                   return data;
               }
@@ -36,7 +38,8 @@ const getidparcelsApi={
 
 
             response.setHeader('Content-Type','application/json');
-            response.send(jsontosend);         
+            response.send(jsontosend);  
+              
 	   }
 
 };
