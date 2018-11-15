@@ -8,7 +8,7 @@ describe("Select All ID Parcels Test ", () => {
     
     let result={ 
         "bobobuya":{
-           "order1":{
+             "order1":{
                "Id":"id111",
                "Info":"Laptop1",
              "Weight":"97",
@@ -31,8 +31,21 @@ describe("Select All ID Parcels Test ", () => {
              "Location":"Kn14",
              "Price": "12",
              "Status":"Cancelled"
-           }
-        }
+           },
+           "id151":{
+            "Id":"id151",
+            "Info":"Headphone",
+            "Weight":"124",
+            "Sender":"bobobuya",
+            "Receiver":"Uwera",
+            "Phone":"3552574454",
+            "Departure":"Kg45",
+            "Destination":"KK333",
+            "Location":"KL153",
+            "Price":"1217",
+            "Status":"In Progress"
+          }
+    }
     };
 
     it("returns status 200", (done)=> {
